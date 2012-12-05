@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDescription</key>
+			<string>Configures security-related items.</string>
+			<key>PayloadDisplayName</key>
+			<string>Passcode</string>
+			<key>PayloadIdentifier</key>
+			<string>com.imas.profile.passcodepolicy</string>
+			<key>PayloadOrganization</key>
+			<string></string>
+			<key>PayloadType</key>
+			<string>com.apple.mobiledevice.passwordpolicy</string>
+			<key>PayloadUUID</key>
+			<string>96B6C1B7-C087-4614-8F9C-B06857E0F198</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>allowSimple</key>
+			<true/>
+			<key>forcePIN</key>
+			<true/>
+			<key>maxGracePeriod</key>
+			<integer>5</integer>
+			<key>minLength</key>
+			<integer>6</integer>
+		</dict>
+		<dict>
+			<key>PayloadCertificateFileName</key>
+			<string>iMAS_RootCA.der</string>
+			<key>PayloadContent</key>
+			<data>
+			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
+			</data>
+			<key>PayloadDescription</key>
+			<string>Provides device authentication (certificate or identity).</string>
+			<key>PayloadDisplayName</key>
+			<string>Fred Smith</string>
+			<key>PayloadIdentifier</key>
+			<string>com.imas.profile.credential</string>
+			<key>PayloadOrganization</key>
+			<string></string>
+			<key>PayloadType</key>
+			<string>com.apple.security.root</string>
+			<key>PayloadUUID</key>
+			<string>BF715416-8117-4ED0-AB1A-80517667EA96</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Enforces a 6 digit passcode. </string>
+	<key>PayloadDisplayName</key>
+	<string>iMAS PasscodeCheck Config Profile</string>
+	<key>PayloadIdentifier</key>
+	<string>com.imas.profile</string>
+	<key>PayloadOrganization</key>
+	<string></string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>EA3EB42B-9C7F-45F7-95ED-B21FB24EEBA7</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

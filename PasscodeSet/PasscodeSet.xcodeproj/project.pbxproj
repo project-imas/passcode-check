@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE619D6F166E59ED005FB5C7 /* iMAS_PasscodeCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = FE619D6E166E59ED005FB5C7 /* iMAS_PasscodeCheck.m */; };
+		FE619D71166E5BBE005FB5C7 /* passcodeCheckCert.der in Resources */ = {isa = PBXBuildFile; fileRef = FE619D70166E5BBE005FB5C7 /* passcodeCheckCert.der */; };
+		FEB055D91665224D00041DE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB055D81665224D00041DE4 /* UIKit.framework */; };
+		FEB055DB1665224D00041DE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB055DA1665224D00041DE4 /* Foundation.framework */; };
+		FEB055DD1665224D00041DE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB055DC1665224D00041DE4 /* CoreGraphics.framework */; };
+		FEB055E31665224D00041DE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEB055E11665224D00041DE4 /* InfoPlist.strings */; };
+		FEB055E51665224D00041DE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB055E41665224D00041DE4 /* main.m */; };
+		FEB055E91665224D00041DE4 /* iMASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB055E81665224D00041DE4 /* iMASAppDelegate.m */; };
+		FEB055EC1665224D00041DE4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEB055EA1665224D00041DE4 /* MainStoryboard.storyboard */; };
+		FEB055EF1665224D00041DE4 /* iMASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB055EE1665224D00041DE4 /* iMASViewController.m */; };
+		FEB055F61665554500041DE4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB055F51665554500041DE4 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FE619D6D166E59DE005FB5C7 /* iMAS_PasscodeCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iMAS_PasscodeCheck.h; sourceTree = "<group>"; };
+		FE619D6E166E59ED005FB5C7 /* iMAS_PasscodeCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iMAS_PasscodeCheck.m; sourceTree = "<group>"; };
+		FE619D70166E5BBE005FB5C7 /* passcodeCheckCert.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = passcodeCheckCert.der; sourceTree = "<group>"; };
+		FEB055D41665224D00041DE4 /* PasscodeSet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasscodeSet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEB055D81665224D00041DE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FEB055DA1665224D00041DE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FEB055DC1665224D00041DE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FEB055E01665224D00041DE4 /* PasscodeSet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PasscodeSet-Info.plist"; sourceTree = "<group>"; };
+		FEB055E21665224D00041DE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEB055E41665224D00041DE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEB055E61665224D00041DE4 /* PasscodeSet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PasscodeSet-Prefix.pch"; sourceTree = "<group>"; };
+		FEB055E71665224D00041DE4 /* iMASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iMASAppDelegate.h; sourceTree = "<group>"; };
+		FEB055E81665224D00041DE4 /* iMASAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iMASAppDelegate.m; sourceTree = "<group>"; };
+		FEB055EB1665224D00041DE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		FEB055ED1665224D00041DE4 /* iMASViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iMASViewController.h; sourceTree = "<group>"; };
+		FEB055EE1665224D00041DE4 /* iMASViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iMASViewController.m; sourceTree = "<group>"; };
+		FEB055F51665554500041DE4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEB055D11665224D00041DE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEB055F61665554500041DE4 /* Security.framework in Frameworks */,
+				FEB055D91665224D00041DE4 /* UIKit.framework in Frameworks */,
+				FEB055DB1665224D00041DE4 /* Foundation.framework in Frameworks */,
+				FEB055DD1665224D00041DE4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEB055C91665224D00041DE4 = {
+			isa = PBXGroup;
+			children = (
+				FEB055F51665554500041DE4 /* Security.framework */,
+				FEB055DE1665224D00041DE4 /* PasscodeSet */,
+				FEB055D71665224D00041DE4 /* Frameworks */,
+				FEB055D51665224D00041DE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEB055D51665224D00041DE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEB055D41665224D00041DE4 /* PasscodeSet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEB055D71665224D00041DE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEB055D81665224D00041DE4 /* UIKit.framework */,
+				FEB055DA1665224D00041DE4 /* Foundation.framework */,
+				FEB055DC1665224D00041DE4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEB055DE1665224D00041DE4 /* PasscodeSet */ = {
+			isa = PBXGroup;
+			children = (
+				FE619D70166E5BBE005FB5C7 /* passcodeCheckCert.der */,
+				FE619D6E166E59ED005FB5C7 /* iMAS_PasscodeCheck.m */,
+				FE619D6D166E59DE005FB5C7 /* iMAS_PasscodeCheck.h */,
+				FEB055E71665224D00041DE4 /* iMASAppDelegate.h */,
+				FEB055E81665224D00041DE4 /* iMASAppDelegate.m */,
+				FEB055EA1665224D00041DE4 /* MainStoryboard.storyboard */,
+				FEB055ED1665224D00041DE4 /* iMASViewController.h */,
+				FEB055EE1665224D00041DE4 /* iMASViewController.m */,
+				FEB055DF1665224D00041DE4 /* Supporting Files */,
+			);
+			path = PasscodeSet;
+			sourceTree = "<group>";
+		};
+		FEB055DF1665224D00041DE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEB055E01665224D00041DE4 /* PasscodeSet-Info.plist */,
+				FEB055E11665224D00041DE4 /* InfoPlist.strings */,
+				FEB055E41665224D00041DE4 /* main.m */,
+				FEB055E61665224D00041DE4 /* PasscodeSet-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEB055D31665224D00041DE4 /* PasscodeSet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEB055F21665224D00041DE4 /* Build configuration list for PBXNativeTarget "PasscodeSet" */;
+			buildPhases = (
+				FEB055D01665224D00041DE4 /* Sources */,
+				FEB055D11665224D00041DE4 /* Frameworks */,
+				FEB055D21665224D00041DE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasscodeSet;
+			productName = PasscodeSet;
+			productReference = FEB055D41665224D00041DE4 /* PasscodeSet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEB055CB1665224D00041DE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = iMAS;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "MITRE Corp";
+			};
+			buildConfigurationList = FEB055CE1665224D00041DE4 /* Build configuration list for PBXProject "PasscodeSet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FEB055C91665224D00041DE4;
+			productRefGroup = FEB055D51665224D00041DE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEB055D31665224D00041DE4 /* PasscodeSet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEB055D21665224D00041DE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEB055E31665224D00041DE4 /* InfoPlist.strings in Resources */,
+				FEB055EC1665224D00041DE4 /* MainStoryboard.storyboard in Resources */,
+				FE619D71166E5BBE005FB5C7 /* passcodeCheckCert.der in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEB055D01665224D00041DE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEB055E51665224D00041DE4 /* main.m in Sources */,
+				FEB055E91665224D00041DE4 /* iMASAppDelegate.m in Sources */,
+				FEB055EF1665224D00041DE4 /* iMASViewController.m in Sources */,
+				FE619D6F166E59ED005FB5C7 /* iMAS_PasscodeCheck.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FEB055E11665224D00041DE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEB055E21665224D00041DE4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FEB055EA1665224D00041DE4 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEB055EB1665224D00041DE4 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEB055F01665224D00041DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gregg Ganley (KE6D38G24X)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Gregg Ganley (KE6D38G24X)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "BAF03896-A331-467F-88B5-EEA762AB0C35";
+				"PROVISIONING_PROFILE[sdk=*]" = "BAF03896-A331-467F-88B5-EEA762AB0C35";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FEB055F11665224D00041DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gregg Ganley (KE6D38G24X)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "BAF03896-A331-467F-88B5-EEA762AB0C35";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEB055F31665224D00041DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PasscodeSet/PasscodeSet-Prefix.pch";
+				INFOPLIST_FILE = "PasscodeSet/PasscodeSet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				VALIDATE_PRODUCT = NO;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FEB055F41665224D00041DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PasscodeSet/PasscodeSet-Prefix.pch";
+				INFOPLIST_FILE = "PasscodeSet/PasscodeSet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = NO;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEB055CE1665224D00041DE4 /* Build configuration list for PBXProject "PasscodeSet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEB055F01665224D00041DE4 /* Debug */,
+				FEB055F11665224D00041DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEB055F21665224D00041DE4 /* Build configuration list for PBXNativeTarget "PasscodeSet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEB055F31665224D00041DE4 /* Debug */,
+				FEB055F41665224D00041DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEB055CB1665224D00041DE4 /* Project object */;
+}
