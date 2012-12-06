@@ -59,10 +59,9 @@ The developer/organization creates a self-signed root certificate and then creat
 First we generate a 4096-bit long RSA key for our root CA and store it in file ca.key:
 <pre>openssl genrsa -out ca.key 4096</pre>
 
-## If you want to password-protect this key, add option -des3.
-## Next, we create our self-signed root CA certificate ca.crt; you’ll need to provide an identity for your root CA:
-## The -x509 option is used for a self-signed certificate. 1826 days gives us a cert valid for 5 years.
-## ROOT CERT
+If you want to password-protect this key, add option -des3. Next, we create our self-signed root CA certificate ca.crt; you’ll need to provide an identity for your root CA. The -x509 option is used for a self-signed certificate. 1826 days gives us a cert valid for 5 years.
+
+<pre>## ROOT CERT
 openssl req -new -x509 -days 1826 -key ca.key -out ca.crt
 
 Country Name (2 letter code) [AU]:US
@@ -76,9 +75,11 @@ Email Address []:f@smith.com
 total 16
 -rw-r--r--  1   staff  2317 Nov  8 10:48 ca.crt
 -rw-r--r--  1   staff  3243 Nov  8 10:46 ca.key
+</pre>
 
 
-## Next step: create our subordinate CA that will be used for the actual signing. First, generate the key:
+Next step: create our subordinate CA that will be used for the actual signing. First, generate the key:
+<pre>
 ## INTERMEDIATE / LEAF / Derived Cert
 openssl genrsa -out ia.key 4096
 
@@ -103,12 +104,13 @@ total 32
 -rw-r--r--  1   staff  3243 Nov  8 10:46 ca.key
 -rw-r--r--  1   staff  1785 Nov  8 10:52 ia.csr
 -rw-r--r--  1   staff  3239 Nov  8 10:50 ia.key
+</pre>
 
-## Next step: process the request for the subordinate CA certificate and get it signed by the root CA
+Next step: process the request for the subordinate CA certificate and get it signed by the root CA
+<pre>
 openssl x509 -req -days 730 -in ia.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out ia.crt
 
-## The cert will be valid for 2 years (730 days) and I decided to choose my own serial 
-## number 01 for this cert (-set_serial 01). For the root CA, I let OpenSSL generate a random serial number.
+The cert will be valid for 2 years (730 days) and I decided to choose my own serial number 01 for this cert (-set_serial 01). For the root CA, I let OpenSSL generate a random serial number.
 
 Signature ok
 subject=/C=US/ST=Massachusetts/L=Bedford/O=MITRE/OU=iMAS sub cert/CN=Tom Smith/emailAddress=t@smith.com
@@ -134,7 +136,7 @@ mv ca.der iMAS_RootCA.der
 openssl x509 -in ia.crt -inform PEM -out ia.der -outform DER
 openssl x509 -in ia.der -inform DER -noout -text
 mv ia.der passcodeCheckCert.der
-
+</pre>
 
 
 License
