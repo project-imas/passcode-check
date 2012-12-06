@@ -1,5 +1,4 @@
 
-
 iMAS - PasscodeCheck Security Control
 =====================================
 
@@ -57,8 +56,8 @@ Certificate Details
 The developer/organization creates a self-signed root certificate and then creates a leaf certificate from the root certificate.  Must be in DER format, openssl default appears to be PEM.  Use iPhone configuration tool, create a configuration profile, Establish a complex passcode requirement, and any other requirement.  Add the ROOT cert file to the configuration profile, ensure DER format.  Connect the iOS device to the computer then from the iphone config tool install the ROOT cert (with a remove anytime or password to remove option).  This installs the root cert in the trusted root store on the device, not the app keychain.  Bundle leaf cert with app by including in the project.  On each app run, read the leaf cert and validate with installed ROOT cert.  If ROOT cert is present, then validate which returns a  5 is kSecTrustResultRecoverableTrustFailure and 4 is kSecTrustResultUnspecified (4 is good, this says ROOT cert is installed, which says config profile is being enforced.
 
 
-# First we generate a 4096-bit long RSA key for our root CA and store it in file ca.key:
-openssl genrsa -out ca.key 4096
+First we generate a 4096-bit long RSA key for our root CA and store it in file ca.key:
+<pre>openssl genrsa -out ca.key 4096</pre>
 
 ## If you want to password-protect this key, add option -des3.
 ## Next, we create our self-signed root CA certificate ca.crt; you’ll need to provide an identity for your root CA:
