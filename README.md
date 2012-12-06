@@ -60,11 +60,14 @@ Big help from this blog posting:
 http://blog.didierstevens.com/2008/12/30/howto-make-your-own-cert-with-openssl
 
 First we generate a 4096-bit long RSA key for our root CA and store it in file ca.key:
-<pre>openssl genrsa -out ca.key 4096</pre>
+<pre>
+openssl genrsa -out ca.key 4096
+</pre>
 
 If you want to password-protect this key, add option -des3. Next, we create our self-signed root CA certificate ca.crt; you’ll need to provide an identity for your root CA. The -x509 option is used for a self-signed certificate. 1826 days gives us a cert valid for 5 years.
 
-<pre>## ROOT CERT
+<pre>
+## ROOT CERT
 openssl req -new -x509 -days 1826 -key ca.key -out ca.crt
 
 Country Name (2 letter code) [AU]:US
@@ -79,7 +82,6 @@ total 16
 -rw-r--r--  1   staff  2317 Nov  8 10:48 ca.crt
 -rw-r--r--  1   staff  3243 Nov  8 10:46 ca.key
 </pre>
-
 
 Next step: create our subordinate CA that will be used for the actual signing. First, generate the key:
 <pre>
@@ -112,9 +114,11 @@ total 32
 Next step: process the request for the subordinate CA certificate and get it signed by the root CA
 <pre>
 openssl x509 -req -days 730 -in ia.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out ia.crt
+</pre>
 
 The cert will be valid for 2 years (730 days) and I decided to choose my own serial number 01 for this cert (-set_serial 01). For the root CA, I let OpenSSL generate a random serial number.
 
+<pre>
 Signature ok
 subject=/C=US/ST=Massachusetts/L=Bedford/O=MITRE/OU=iMAS sub cert/CN=Tom Smith/emailAddress=t@smith.com
 Getting CA Private Key
