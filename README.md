@@ -47,7 +47,9 @@ To use this security control:
    5.  Install the config profile on the device(s)
    6.  Compile, build, and test app with PasscodeCheck code in place
 
-SEND US FEEDBACK OF USE and/or FIXES !!!
+
+We strongly encourage developers to send us with feedback on your intended use and/or fixes. This information will enable us to address relevancy and need.
+
 
 Certificate Details
 ===================
