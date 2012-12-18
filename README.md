@@ -32,6 +32,8 @@ The PasscodeCheck security check is implemented using the Certificate, Key, and 
 The developer/organization creates a self-signed root certificate and then creates a leaf certificate from the root certificate.  Must be in DER format, openssl default appears to be PEM.  Use iPhone configuration tool, create a configuration profile, Establish a complex passcode requirement, and any other requirement.  Add the ROOT cert file to the configuration profile, ensure DER format.  Connect the iOS device to the computer then from the iphone config tool install the ROOT cert (with a remove anytime or password to remove option).  This installs the root cert in the trusted root store on the device, not the app keychain.  Bundle leaf cert with app by including in the project.  On each app run, read the leaf cert and validate with installed ROOT cert.  If ROOT cert is present, then validate which returns a  5 is kSecTrustResultRecoverableTrustFailure and 4 is kSecTrustResultUnspecified (4 is good, this says ROOT cert is installed, which says config profile is being enforced.
 
 
+![screenshot](https://github.com/project-imas/passcode-check/raw/master/passcode-check.png)
+
 API and use
 ===========  
 
