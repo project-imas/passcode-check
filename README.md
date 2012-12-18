@@ -27,6 +27,7 @@ Vulnerabilities Addressed
 4. Jailbreak and passcode bruteforce attack
   - CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
   - CWE-250: Execution with Unnecessary Privileges
+  - CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
 
 Design
 ======
