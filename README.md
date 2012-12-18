@@ -26,6 +26,7 @@ Vulnerabilities Addressed
   - CWE-807: Reliance on Untrusted Inputs in a Security Decision
 4. Jailbreak and passcode bruteforce attack
   - CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
+  - CWE-250: Execution with Unnecessary Privileges
 
 Design
 ======
