@@ -40,8 +40,8 @@ To use this security control:
    1.  Copy its files (.h and .m) to your iOS application project
        - Make the call to `isPasscodeSet`
        - Based on the return value, one can decide whether to continue use of the application, halt the app, or run in a degraded mode.  
-   2.  Create a root and leaf cert, or use the provided certs on this site. 
-   3.  Use the iPhone Configuration Tool, and create a configuration profile with an appropriate passcode policy, or use the config profile provided on this site
+   2.  Create a root (`iMAS_RootCA.der`) and leaf cert (`passcodeCheckCert.der`), or use the provided certs on this site. 
+   3.  Use the iPhone Configuration Tool, and create a configuration profile with an appropriate passcode policy, or use the config profile (`*.mobileconfig`) provided on this site
    4.  Bundle the root cert with your config profile
    5.  Bundle the leaf cert with the application
    5.  Install the config profile on the device(s)
