@@ -34,18 +34,18 @@ The developer/organization creates a self-signed root certificate and then creat
 API and use
 ===========  
 
-iMAS_PasscodeCheck contains one, static method called isPasscodeSet that returns a boolean.  The return value indicates true, if the complex passcode config profile is installed (thus a complex passcode is in use on the device), and indicates false if anywhere in the validation process fails.
+`iMAS_PasscodeCheck` contains one static method called `isPasscodeSet` that returns a Boolean. The return value indicates true, if the complex passcode config profile is installed (thus a complex passcode is in use on the device), and indicates false if the validation process fails at any point.
 
 To use this security control:
    1.  Copy its files (.h and .m) to your iOS application project
-       - Make the call to isPasscodeSet
+       - Make the call to `isPasscodeSet`
        - Based on the return value, one can decide whether to continue use of the application, halt the app, or run in a degraded mode.  
    2.  Create a root and leaf cert, or use the provided certs on this site. 
    3.  Use the iPhone Configuration Tool, and create a configuration profile with an appropriate passcode policy, or use the config profile provided on this site
    4.  Bundle the root cert with your config profile
    5.  Bundle the leaf cert with the application
    5.  Install the config profile on the device(s)
-   6.  Compile, build, and test app with PasscodeCheck code in place
+   6.  Compile, build, and test app with `PasscodeCheck` code in place
 
 
 We strongly encourage developers to send us with feedback on your intended use and/or fixes. This information will enable us to address relevancy and need.
@@ -60,12 +60,12 @@ The developer/organization creates a self-signed root certificate and then creat
 Big help from this blog posting:
 http://blog.didierstevens.com/2008/12/30/howto-make-your-own-cert-with-openssl
 
-First we generate a 4096-bit long RSA key for our root CA and store it in file ca.key:
+First we generate a 4096-bit long RSA key for our root CA and store it in file `ca.key`:
 <pre>
 openssl genrsa -out ca.key 4096
 </pre>
 
-If you want to password-protect this key, add option -des3. Next, we create our self-signed root CA certificate ca.crt; you’ll need to provide an identity for your root CA. The -x509 option is used for a self-signed certificate. 1826 days gives us a cert valid for 5 years.
+If you want to password-protect this key, add option `-des3`. Next, we create our self-signed root CA certificate `ca.crt`; you’ll need to provide an identity for your root CA. The `-x509` option is used for a self-signed certificate. 1826 days gives us a cert valid for 5 years.
 
 <pre>
 ## ROOT CERT
@@ -117,7 +117,7 @@ Next step: process the request for the subordinate CA certificate and get it sig
 openssl x509 -req -days 730 -in ia.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out ia.crt
 </pre>
 
-The cert will be valid for 2 years (730 days) and I decided to choose my own serial number 01 for this cert (-set_serial 01). For the root CA, I let OpenSSL generate a random serial number.
+The cert will be valid for 2 years (730 days) and I decided to choose my own serial number 01 for this cert (`-set_serial 01`). For the root CA, I let OpenSSL generate a random serial number.
 
 <pre>
 Signature ok
