@@ -22,6 +22,7 @@ Vulnerabilities Addressed
   - CWE-862: Missing Authorization
   - CWE-306: Missing Authentication for Critical Function
 2. 4-digit system passcode set on iOS device
+  - CWE-521: Weak Password
 3. Finger smudge on screen attack
   - CWE-807: Reliance on Untrusted Inputs in a Security Decision
 4. Jailbreak and passcode bruteforce attack
