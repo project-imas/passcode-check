@@ -13,6 +13,8 @@ Background
 iOS does not offer a simple API or library that a developer can programmatically call to confirm whether or not the system passcode is set. If it is set, is it complex, specifically more complex than a simple 4-digit passcode? Without this assurance, an iOS application could be vulnerable to data theft stemming from inadequate application security. This is based on the scenario where an attacker gains physical access to an iOS device, either from an owner losing their device, temporary loss due to the device being serviced, or actual theft of the device. Once an iOS device is in the hands of an attacker, without a passcode or a simple 4-digit passcode on the device, the attacker will be able to bruteforce the passcode with ease. Once the passcode is known, the device can be unlocked, jailbroken, and application data easily stolen. This vulnerability can be reduced considerably with the use of a complex passcode, that is, one that is at least 6 digits in length and alphanumeric. Given this scenario, an iOS application developer does not have any mechanism to assess if an app is running in a marginally secure or a verified secure environment.
 
 iMAS has researched and implemented a system passcode check library and process that can be easily added to any iOS application bundle and release process. 
+
+Common Weakness Enumerations (CWE), better known as software errors, have been applied to each vulnerability addressed, to better help security engineers identify the value of each implementation. More CWE details can be found at http://cwe.mitre.org.
  
 
 Vulnerabilities Addressed
