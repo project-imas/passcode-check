@@ -23,14 +23,19 @@ Vulnerabilities Addressed
 1. No system passcode set on iOS device
   - CWE-862: Missing Authorization
   - CWE-306: Missing Authentication for Critical Function
+  - SRG-APP-000082-MAPP-000025 Severity-CAT II:	If the mobile application processes digitally signed data or code, then it must validate the digital signature.
 2. 4-digit system passcode set on iOS device
   - CWE-521: Weak Password Requirements
+  - SRG-APP-000129-MAPP-000029 Severity-CAT II:	The mobile application must implement automated mechanisms to enforce access control restrictions which are not provided by the operating system.
+  - SRG-APP-000200-MAPP-000044 Severity-CAT II:	The mobile application must shut down when it determines that a required security function is unavailable.
+  - SRG-APP-000225-MAPP-000047 Severity-CAT II:	The mobile application must fail to an initial state when the application unexpectedly terminates, unless it maintains a secure state at all times.
 3. Finger smudge on screen attack
   - CWE-807: Reliance on Untrusted Inputs in a Security Decision
 4. Jailbreak and passcode bruteforce attack
   - CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
   - CWE-250: Execution with Unnecessary Privileges
   - CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
+  - SRG-APP-000133-MAPP-000030 Severity-CAT II:	The mobile application must not enable other applications or non-privileged processes to modify software libraries.
 
 Design
 ======
