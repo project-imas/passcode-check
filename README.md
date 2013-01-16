@@ -29,9 +29,7 @@ Vulnerabilities Addressed
   - SRG-APP-000129-MAPP-000029 Severity-CAT II:	The mobile application must implement automated mechanisms to enforce access control restrictions which are not provided by the operating system.
   - SRG-APP-000200-MAPP-000044 Severity-CAT II:	The mobile application must shut down when it determines that a required security function is unavailable.
   - SRG-APP-000225-MAPP-000047 Severity-CAT II:	The mobile application must fail to an initial state when the application unexpectedly terminates, unless it maintains a secure state at all times.
-3. Finger smudge on screen attack
-  - CWE-807: Reliance on Untrusted Inputs in a Security Decision
-4. Jailbreak and passcode bruteforce attack
+3. Jailbreak and passcode bruteforce attack
   - CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
   - CWE-250: Execution with Unnecessary Privileges
   - CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
