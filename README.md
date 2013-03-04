@@ -176,3 +176,8 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/2900af9ba8b4c8b4174a963ce5d9f83a "githalytics.com")](http://githalytics.com/project-imas/passcode-check)
+
+
