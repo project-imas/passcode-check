@@ -11,5 +11,6 @@
 @interface iMASViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextView *output;
+- (void)clearOutput;
 
 @end

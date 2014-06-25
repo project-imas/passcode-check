@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE14CF3618DB653900218FAB /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE14CF3518DB653900218FAB /* Media.xcassets */; };
+		FE14CF9918DB7B7D00218FAB /* imas.png in Resources */ = {isa = PBXBuildFile; fileRef = FE14CF9818DB7B7D00218FAB /* imas.png */; };
 		FE619D6F166E59ED005FB5C7 /* iMAS_PasscodeCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = FE619D6E166E59ED005FB5C7 /* iMAS_PasscodeCheck.m */; };
 		FE619D71166E5BBE005FB5C7 /* passcodeCheckCert.der in Resources */ = {isa = PBXBuildFile; fileRef = FE619D70166E5BBE005FB5C7 /* passcodeCheckCert.der */; };
 		FEB055D91665224D00041DE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB055D81665224D00041DE4 /* UIKit.framework */; };
@@ -18,13 +20,18 @@
 		FEB055EC1665224D00041DE4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEB055EA1665224D00041DE4 /* MainStoryboard.storyboard */; };
 		FEB055EF1665224D00041DE4 /* iMASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB055EE1665224D00041DE4 /* iMASViewController.m */; };
 		FEB055F61665554500041DE4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB055F51665554500041DE4 /* Security.framework */; };
+		FEBC99A6195B60F20062417B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEBC99A5195B60F20062417B /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE14CF3518DB653900218FAB /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		FE14CF3918DB67F100218FAB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Media.xcassets/LaunchImage.launchimage/Default.png; sourceTree = "<group>"; };
+		FE14CF3A18DB69D000218FAB /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60.png"; path = "../../../../../Downloads/Icon-60.png"; sourceTree = "<group>"; };
+		FE14CF9818DB7B7D00218FAB /* imas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imas.png; sourceTree = "<group>"; };
 		FE619D6D166E59DE005FB5C7 /* iMAS_PasscodeCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iMAS_PasscodeCheck.h; sourceTree = "<group>"; };
 		FE619D6E166E59ED005FB5C7 /* iMAS_PasscodeCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iMAS_PasscodeCheck.m; sourceTree = "<group>"; };
 		FE619D70166E5BBE005FB5C7 /* passcodeCheckCert.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = passcodeCheckCert.der; sourceTree = "<group>"; };
-		FEB055D41665224D00041DE4 /* PasscodeSet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasscodeSet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEB055D41665224D00041DE4 /* PasscodeCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasscodeCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB055D81665224D00041DE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FEB055DA1665224D00041DE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FEB055DC1665224D00041DE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -38,6 +45,7 @@
 		FEB055ED1665224D00041DE4 /* iMASViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iMASViewController.h; sourceTree = "<group>"; };
 		FEB055EE1665224D00041DE4 /* iMASViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iMASViewController.m; sourceTree = "<group>"; };
 		FEB055F51665554500041DE4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FEBC99A5195B60F20062417B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,11 @@
 		FEB055C91665224D00041DE4 = {
 			isa = PBXGroup;
 			children = (
+				FEBC99A5195B60F20062417B /* Images.xcassets */,
+				FE14CF3A18DB69D000218FAB /* Icon-60.png */,
+				FE14CF9818DB7B7D00218FAB /* imas.png */,
+				FE14CF3918DB67F100218FAB /* Default.png */,
+				FE14CF3518DB653900218FAB /* Media.xcassets */,
 				FEB055F51665554500041DE4 /* Security.framework */,
 				FEB055DE1665224D00041DE4 /* PasscodeSet */,
 				FEB055D71665224D00041DE4 /* Frameworks */,
@@ -68,7 +81,7 @@
 		FEB055D51665224D00041DE4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FEB055D41665224D00041DE4 /* PasscodeSet.app */,
+				FEB055D41665224D00041DE4 /* PasscodeCheck.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,7 +140,7 @@
 			);
 			name = PasscodeSet;
 			productName = PasscodeSet;
-			productReference = FEB055D41665224D00041DE4 /* PasscodeSet.app */;
+			productReference = FEB055D41665224D00041DE4 /* PasscodeCheck.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,7 +176,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEB055E31665224D00041DE4 /* InfoPlist.strings in Resources */,
+				FE14CF9918DB7B7D00218FAB /* imas.png in Resources */,
 				FEB055EC1665224D00041DE4 /* MainStoryboard.storyboard in Resources */,
+				FEBC99A6195B60F20062417B /* Images.xcassets in Resources */,
+				FE14CF3618DB653900218FAB /* Media.xcassets in Resources */,
 				FE619D71166E5BBE005FB5C7 /* passcodeCheckCert.der in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,7 +243,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PROVISIONING_PROFILE = "BAF03896-A331-467F-88B5-EEA762AB0C35";
 				"PROVISIONING_PROFILE[sdk=*]" = "BAF03896-A331-467F-88B5-EEA762AB0C35";
 				SDKROOT = iphoneos;
@@ -250,7 +266,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "BAF03896-A331-467F-88B5-EEA762AB0C35";
 				SDKROOT = iphoneos;
@@ -261,12 +277,15 @@
 		FEB055F31665224D00041DE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PasscodeSet/PasscodeSet-Prefix.pch";
 				INFOPLIST_FILE = "PasscodeSet/PasscodeSet-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = PasscodeCheck;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALIDATE_PRODUCT = NO;
@@ -277,11 +296,14 @@
 		FEB055F41665224D00041DE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PasscodeSet/PasscodeSet-Prefix.pch";
 				INFOPLIST_FILE = "PasscodeSet/PasscodeSet-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = PasscodeCheck;
 				VALIDATE_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
 			};

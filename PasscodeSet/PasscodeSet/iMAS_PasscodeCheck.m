@@ -11,6 +11,8 @@
 @implementation iMAS_PasscodeCheck
 
 
+//** is a configuration profile installed that forces the user to set a more rigorous password
+
 + (Boolean)isPasscodeSet {
 
     OSStatus            err;
