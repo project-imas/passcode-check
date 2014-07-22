@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface iMAS_PasscodeCheck
+@interface iMAS_PasscodeCheck : NSObject
 
 //** is a configuration profile installed that forces the user to set a more rigorous password
 + (Boolean)isPasscodeSet;

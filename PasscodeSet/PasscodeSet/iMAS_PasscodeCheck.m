@@ -88,7 +88,7 @@
     NSLog(@"err = %d, trustResult = %d", (int) err, (int) trustResult);
     switch (trustResult) {
         case kSecTrustResultProceed: // 1
-        case kSecTrustResultConfirm: // 2
+        case kSecTrustResultConfirm: // 2 - deprecated in iOS 7, but still valid in iOS 6
         case kSecTrustResultUnspecified: // 4
             isPasscodeSetResult = true;
             break;
