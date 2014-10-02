@@ -109,5 +109,48 @@
     return isPasscodeSetResult;
 }
 
++ (Boolean)isPasscodeSetKeychainAPI {
+    
+    BOOL isAPIAvailable = (&kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly != NULL);
+    
+    // Not available prior to iOS 8 - safe to return false rather than throwing exception
+    if(isAPIAvailable) {
+    
+        // From http://pastebin.com/T9YwEjnL
+        NSData* secret = [@"Device has passcode set?" dataUsingEncoding:NSUTF8StringEncoding];
+        NSDictionary *attributes = @{
+                                     (__bridge id)kSecClass: (__bridge id)kSecClassGenericPassword,
+                                     (__bridge id)kSecAttrService: @"LocalDeviceServices",
+                                     (__bridge id)kSecAttrAccount: @"NoAccount",
+                                     (__bridge id)kSecValueData: secret,
+                                     (__bridge id)kSecAttrAccessible: (__bridge id)kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly
+                                     };
+        
+        // Original code claimed to check if the item was already on the keychain
+        // but in reality you can't add duplicates so this will fail with errSecDuplicateItem
+        // if the item is already on the keychain (which could throw off our check if
+        // kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly was not set)
+        
+        OSStatus status = SecItemAdd((__bridge CFDictionaryRef)attributes, NULL);
+        if (status == errSecSuccess) { // item added okay, passcode has been set
+            NSDictionary *query = @{
+                                    (__bridge id)kSecClass:  (__bridge id)kSecClassGenericPassword,
+                                    (__bridge id)kSecAttrService: @"LocalDeviceServices",
+                                    (__bridge id)kSecAttrAccount: @"NoAccount"
+                                    };
+            
+            status = SecItemDelete((__bridge CFDictionaryRef)query);
+            
+            return true;
+        }
+        
+        // errSecDecode seems to be the error thrown on a device with no passcode set
+        if (status == errSecDecode) {
+            return false;
+        }
+    }
+    
+    return false;
+}
 
 @end

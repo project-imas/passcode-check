@@ -18,18 +18,28 @@
     
     NSLog(@"Button Pressed = %@", buttonName);
 
+    Boolean is_set;
     
-    Boolean is_set = [iMAS_PasscodeCheck isPasscodeSet];
+    if ([buttonName isEqualToString:@"iOS 8 Keychain API Passcode Check"]) {
+        is_set = [iMAS_PasscodeCheck isPasscodeSetKeychainAPI];
+        
+        if (is_set) {
+            self.output.text = @"iOS 8 API reveals the device has a passcode";
+            NSLog(@"iOS 8: Passcode is set");
+        } else {
+            self.output.text = @"iOS 8 API reveals no passcode or API unavailable";
+            NSLog(@"iOS 8: Passcode not set or API unavailable");
+        }
+    } else {
+        is_set = [iMAS_PasscodeCheck isPasscodeSet];
     
-    if (is_set == TRUE)
-        self.output.text = @"Device passcode meets app requirements";
-    else
-        self.output.text = @"Device passcode may not be set or does not meet app requirements!";
-    
-    NSLog(@"is passcode set? %d", [iMAS_PasscodeCheck isPasscodeSet]);
-
-    
-    
+        if (is_set == TRUE)
+            self.output.text = @"Device passcode meets app requirements";
+        else
+            self.output.text = @"Device passcode may not be set or does not meet app requirements!";
+        
+        NSLog(@"is passcode set? %d", is_set);
+    }
 }
 
 // when app goes into background
