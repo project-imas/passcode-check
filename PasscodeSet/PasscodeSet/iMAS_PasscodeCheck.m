@@ -8,6 +8,14 @@
 
 #import "iMAS_PasscodeCheck.h"
 
+
+
+// TODO Should also look for versions greater
+#ifndef __IPHONE_8_0
+void* kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly = NULL;
+#endif
+
+
 @implementation iMAS_PasscodeCheck
 
 
@@ -111,7 +119,7 @@
 
 + (Boolean)isPasscodeSetKeychainAPI {
     
-    BOOL isAPIAvailable = (&kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly != NULL);
+    BOOL isAPIAvailable = (kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly != NULL);
     
     // Not available prior to iOS 8 - safe to return false rather than throwing exception
     if(isAPIAvailable) {
