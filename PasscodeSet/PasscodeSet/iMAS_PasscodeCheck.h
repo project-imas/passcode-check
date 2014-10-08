@@ -13,4 +13,7 @@
 //** is a configuration profile installed that forces the user to set a more rigorous password
 + (Boolean)isPasscodeSet;
 
+//** iOS 8 adds a keychain API to test if passcode is set
++ (Boolean)isPasscodeSetKeychainAPI;
+
 @end
